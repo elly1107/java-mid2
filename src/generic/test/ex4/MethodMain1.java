@@ -8,8 +8,11 @@ public class MethodMain1 {
         //타입 인자 명시적 전달
         System.out.println("명시적 타입 인자 전달");
         Integer integerValue = GenericMethod.<Integer>genericMethod(i);
-        System.out.println("integerValue = " + integerValue);
         Double doubleValue = GenericMethod.<Double>numberMethod(20.0);
-        System.out.println("doubleValue = " + doubleValue);
+        String s = GenericMethod.<String>genericMethod("hello");
+
+        Integer integerValue1 = GenericMethod.genericMethod(i);
+        Double doubleValue1 = GenericMethod.numberMethod(20.0);
+        String s1 = GenericMethod.genericMethod("hello");
     }
 }
