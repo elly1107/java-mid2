@@ -18,7 +18,9 @@ public class WildcardMain1 {
         WildcardEx.printGenericV2(dogBox);
         WildcardEx.printWildcardV2(dogBox);
 
+        //반환값이 제너릭 타입
         Dog dog = WildcardEx.printAndReturnGeneric(dogBox);
+        //반환값이 Animal
         Animal animal = WildcardEx.printAndReturnWildcard(dogBox);
         System.out.println("dog = " + dog);
         System.out.println("animal = " + animal);
