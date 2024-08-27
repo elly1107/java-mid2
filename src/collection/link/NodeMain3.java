@@ -18,6 +18,16 @@ public class NodeMain3 {
         int index = 2;
         Node indexNode = getNode(first, index);
         System.out.println("indexNode = " + indexNode);
+
+        add(first, "D");
+        add(first, "E");
+        add(first, "F");
+        System.out.println("first = " + first);
+    }
+
+    private static void add(Node node, String s) {
+        Node lastNode = getLastNode(node);
+        lastNode.next = new Node(s);
     }
 
     private static Node getNode(Node node, int index) {
