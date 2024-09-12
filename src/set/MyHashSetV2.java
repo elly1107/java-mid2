@@ -48,7 +48,7 @@ public class MyHashSetV2 {
     public boolean remove(Object value) {
         int hashIndex = hashIndex(value);
         LinkedList<Object> bucket = buckets[hashIndex]; //bucket은 [99,9] 이런거임
-        boolean result = bucket.remove(value)); // int 로 갈 경우 값이 아니라 인덱스를 가리킴. (예를 들어 [99,9]에서 9를 지우고 싶으면 2라고 써야됨)
+        boolean result = bucket.remove(value); // int 로 갈 경우 값이 아니라 인덱스를 가리킴. (예를 들어 [99,9]에서 9를 지우고 싶으면 2라고 써야됨)
         if (result) {
             size--;
             return true;
