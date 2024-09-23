@@ -19,8 +19,9 @@ public class SetOperationsTest {
 
         Set<Integer> difference = new TreeSet<>(set1);
         difference.removeAll(set2);
-        System.out.println("difference = d" + difference);
+        System.out.println("difference = " + difference);
 
 
     }
 }
+
