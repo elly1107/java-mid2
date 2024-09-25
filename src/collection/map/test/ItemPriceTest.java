@@ -1,9 +1,6 @@
 package collection.map.test;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class ItemPriceTest {
     public static void main(String[] args) {
@@ -14,14 +11,13 @@ public class ItemPriceTest {
         map.put("딸기", 1000);
 
         //값이 1000원인 모든 상품을 출력해라
-        Set<String> fruits = map.keySet();
-        Set<String> wanted = new HashSet<>();
-        for (String fruit : fruits) {
-            if (map.get(fruit) == 1000) {
-                wanted.add(fruit);
+        List<String> list = new ArrayList<>();
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if (entry.getValue().equals(1000)) {
+                list.add(entry.getKey());
             }
         }
-        System.out.println(wanted);
+        System.out.println(list);
 
     }
 }
