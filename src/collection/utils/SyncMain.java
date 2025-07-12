@@ -15,7 +15,5 @@ public class SyncMain {
         //멀티쓰레드에서 동기화 문제에서 안전한 리스트
         List<Integer> synchronizedList = Collections.synchronizedList(list);
         System.out.println("synchronizedList.getClass() = " + synchronizedList.getClass());
-
-        //우왓
     }
 }
