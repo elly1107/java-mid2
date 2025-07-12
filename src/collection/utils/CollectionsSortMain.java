@@ -19,13 +19,13 @@ public class CollectionsSortMain {
 
         System.out.println("list = " + list);
         Collections.shuffle(list);
-        System.out.println("list = " + list);
+        System.out.println("shuffled list = " + list);
 
         Collections.sort(list);
-        System.out.println("list = " + list);
+        System.out.println("sorted list = " + list);
 
         Collections.reverse(list);
-        System.out.println("list = " + list);
+        System.out.println("reversed list = " + list);
 
     }
 }
