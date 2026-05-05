@@ -14,9 +14,9 @@ public class CollectionsSortMain {
 
         Integer max = Collections.max(list);
         Integer min = Collections.min(list);
+
         System.out.println("min = " + min);
         System.out.println("max = " + max);
-
         System.out.println("list = " + list);
         Collections.shuffle(list);
         System.out.println("shuffled list = " + list);
