@@ -22,7 +22,7 @@ public class EmptyListMain {
         Integer[] arr = {1, 2, 3, 4, 5};
         List<Integer> arrList = Arrays.asList(arr);
 
-        //따라서 0번째를 100으로 바꿨을때 둘다 바꿈
+        //따라서 0번째를 100으로 바꿨을때 둘다 바꿈. 같은 위치를 참조하기 때문.
         arrList.set(0, 100);
         System.out.println("arrList = " + arrList);
         System.out.println("arr = " + Arrays.toString(arr));
